@@ -18,6 +18,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS:  mongodb
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
+      MONGODB_DB_PORT: 27017
       PORT: 8080
     services: 
       mongodb:
