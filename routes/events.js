@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
   const eventData = req.body;
   const result = await db.collection('events').insertOne({...eventData});
   res.status(201).json({
-    message: 'Event created.',
+    message: 'Event created....',
     event: { ...eventData, id: result.insertedId },
   });
 });
